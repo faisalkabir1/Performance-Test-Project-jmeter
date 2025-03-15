@@ -91,7 +91,7 @@ This test plan (`booking.jmx`) automates API testing for the **RESTful Booker AP
 {
    "firstname": "Generate Random FirstName",
    "lastname": "Generate Random LastName",
-   "totalprice": Generate random amount,
+   "totalprice": "Generate random amount",
    "depositpaid": true,
    "bookingdates": {
       "checkin": "2024-01-01",
@@ -102,8 +102,6 @@ This test plan (`booking.jmx`) automates API testing for the **RESTful Booker AP
 
 **Extract Booking ID:**  
 Use JSON Extractor to capture `bookingid` for validation.
-
----
 
 4️⃣ Search Booking
 
@@ -121,10 +119,11 @@ Ensure the response contains the correct booking details.
   - 1st step: 5 min load with 831 Users ![jmeter 1-1](https://github.com/user-attachments/assets/463ffd95-26d6-440d-8733-83e3c5a9e2fe)
   - 2nd step: 10 min load with 1662 Users ![jmeter1-2](https://github.com/user-attachments/assets/3283c305-6bcb-42be-a302-350807218bb0)
   - 3rd step: 20 min load with 3324 Users **Statistics from HTML Report** ![image](https://github.com/user-attachments/assets/0a69e0f0-5157-48fa-a250-ad0e8c772601)
-
   
 - **Stress Test Statistics from HTML Report**
-  
+  Identified the bottleneck throughput by conducting a stress test.
+  ![Dmoney_stress-test](https://github.com/user-attachments/assets/38ca8e62-ba85-45e4-ba64-d7046eb72e12)
+
 - **Load Test & Stress Test Reports (Excel)**
   [Excel Reports](https://docs.google.com/spreadsheets/d/1onegMbcLFkq4Mt_uRWEi0odjANg9zXRe/edit?usp=drive_link&ouid=110591976413796555813&rtpof=true&sd=true)
 
