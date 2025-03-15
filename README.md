@@ -61,7 +61,8 @@ booking.
 - **Request Summary**
   - 1st step: 5 min load with 831 Users ![jmeter 1-1](https://github.com/user-attachments/assets/463ffd95-26d6-440d-8733-83e3c5a9e2fe)
   - 2nd step: 10 min load with 1662 Users ![jmeter1-2](https://github.com/user-attachments/assets/3283c305-6bcb-42be-a302-350807218bb0)
-  - 3rd step: 20 min load with 3324 Users **Statistics from HTML Report** ![jmeter 1-3finale](https://github.com/user-attachments/assets/207e03af-4d01-4a17-a08c-98700857b49c)
+  - 3rd step: 20 min load with 3324 Users **Statistics from HTML Report** ![image](https://github.com/user-attachments/assets/0a69e0f0-5157-48fa-a250-ad0e8c772601)
+
   
 - **Stress Test Statistics from HTML Report**
   
