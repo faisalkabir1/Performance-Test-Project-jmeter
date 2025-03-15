@@ -57,6 +57,65 @@ This repository contains JMeter test plans and reports for performance testing o
 **Scenario:**
 120,000 users over a 12-hour period log in, create a booking, and search for the
 booking. 
+#### Task Overview:  
+This test plan (`booking.jmx`) automates API testing for the **RESTful Booker API**, covering:  
+✔ Authentication  
+✔ Booking creation with **randomized data**  
+✔ Booking search and validation  
+
+#### Test Steps & Configuration:  
+
+1️⃣ **Set Headers** (Using HTTP Header Manager)  
+   - `Accept: */*`  
+
+2️⃣ **Login & Authentication**  
+   - **Endpoint:** `https://restful-booker.herokuapp.com/auth`  
+   - **Method:** `POST`  
+   - **Request Body:**  
+     ``` json:
+         {
+            "username": "admin",
+            "password": "password123"
+      
+         }
+3️⃣ **Create Booking**
+
+   - **Endpoint:**  
+   `https://restful-booker.herokuapp.com/booking`
+   
+   - **Method:**  
+   `POST`
+   
+   **Request Body (Dynamic Data):**  
+   ```json
+{
+   "firstname": "Generate Random FirstName",
+   "lastname": "Generate Random LastName",
+   "totalprice": Generate random amount,
+   "depositpaid": true,
+   "bookingdates": {
+      "checkin": "2024-01-01",
+      "checkout": "2024-01-02"
+   }
+}
+```
+
+**Extract Booking ID:**  
+Use JSON Extractor to capture `bookingid` for validation.
+
+---
+
+4️⃣ Search Booking
+
+  - **Endpoint:**  
+   `https://restful-booker.herokuapp.com/booking/<booking_id>`
+   
+ - **Method:**  
+   `GET`
+
+**Validation:**  
+Ensure the response contains the correct booking details.
+
 #### Load Test & Stress Test Results
 - **Request Summary**
   - 1st step: 5 min load with 831 Users ![jmeter 1-1](https://github.com/user-attachments/assets/463ffd95-26d6-440d-8733-83e3c5a9e2fe)
