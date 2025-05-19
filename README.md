@@ -124,8 +124,11 @@ Ensure the response contains the correct booking details.
   Identified the bottleneck throughput by conducting a stress test.
   ![Dmoney_stress-test](https://github.com/user-attachments/assets/38ca8e62-ba85-45e4-ba64-d7046eb72e12)
 
-- **Load Test & Stress Test Reports (Excel)**
+#### Load Test & Stress Test Reports (Excel)
   [Excel Reports](https://docs.google.com/spreadsheets/d/1onegMbcLFkq4Mt_uRWEi0odjANg9zXRe/edit?usp=drive_link&ouid=110591976413796555813&rtpof=true&sd=true)
+ 
+  <img width="631" alt="image" src="https://github.com/user-attachments/assets/ae7afd58-f651-4f7e-89c4-4066446ff339" />
+  <img width="707" alt="image" src="https://github.com/user-attachments/assets/148c53f7-ef01-49e3-a222-5c799a028c3a" />
 
 ### Task 2: Dmoney API
 #### Scenario Overview:
